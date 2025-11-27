@@ -23,3 +23,29 @@ conda activate medibot
 ```bash
 pip install -r requirements.txt
 ```
+
+### Create a .env file in the root directory and add your Pinecone & GROQ credentials as follows:
+```bash
+PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxx"
+GROQ_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxx"
+```
+```bash
+#run the following command to store embeddings to pinecone
+python store_index.py
+```
+```bash
+# Finally run the following command
+python app.py
+```
+
+#### Now,
+```bash
+open up localhost:
+```
+
+### Techstack used:
+- python
+- LangChain
+- Flask
+- GROQ
+- Pinecone
